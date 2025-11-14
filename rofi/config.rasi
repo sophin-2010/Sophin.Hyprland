@@ -6,7 +6,7 @@ configuration {
 
 * {
     /* Dracula theme colour palette */
-    drac-bgd: #282a36;
+    drac-bgd: #192049;
     drac-cur: #44475a;
     drac-fgd: #f8f8f2;
     drac-cmt: #6272a4;
@@ -30,7 +30,7 @@ configuration {
     selected-urgent-background: @urgent-background;
     selected-active-background: @active-background;
     separatorcolor: @active-background;
-    bordercolor: #6272a4;
+    bordercolor: #fc4ec8;
 }
 
 #window {
