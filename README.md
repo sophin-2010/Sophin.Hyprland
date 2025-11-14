@@ -5,7 +5,7 @@ My hyprland config
 Requirements:
 - rofi ()
 - kitty
-- catnap (https://aur.archlinux.org/catnap-git.git)
+- [catnap](https://aur.archlinux.org/catnap-git)
 - waybar
 - btop
 - swaybg
