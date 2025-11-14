@@ -3,12 +3,12 @@ My hyprland config
 
 
 Requirements:
-- rofi ()
-- kitty
+- [rofi](https://aur.archlinux.org/rofi-git)
+- [kitty](https://aur.archlinux.org/kitty-git)
 - [catnap](https://aur.archlinux.org/catnap-git)
-- waybar
-- btop
-- swaybg
+- [waybar](https://aur.archlinux.org/waybar-git)
+- [btop](https://aur.archlinux.org/htop-git)
+- [swaybg](https://aur.archlinux.org/swaybg-git)
 
 
 Font:
