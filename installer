@@ -32,6 +32,7 @@ if [[ $CFG == "Y" || $CFG == "y" ]]; then
 	rm ~/.bashrc
 	echo -e '\ncatnap' >> ~/.bashrc    
 	echo -e '\neval"$(starship init bash)"' >> ~/.bashrc
+	chsh -s /usr/bin/zsh
 fi
 
 
