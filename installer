@@ -30,7 +30,7 @@ if [[ $CFG == "Y" || $CFG == "y" ]]; then
 
     cp dotfiles/.starship.toml ~/.config/
 	rm ~/.bashrc
-	echo -e '\ncatnap"' >> ~/.bashrc    
+	echo -e '\ncatnap' >> ~/.bashrc    
 	echo -e '\neval"$(starship init bash)"' >> ~/.bashrc
 fi
 
