@@ -13,7 +13,7 @@ read -n1 -rep 'Would you like to install the packages? (y,n)' INST
 if [[ $INST == "Y" || $INST == "y" ]]; then
     yay -S --noconfirm hyprland kitty waybar-hyprland \
     swaybg rofi catnap ttf-jetbrains-mono-nerd starship \
-    grim 
+    grim librewolf discord
 fi
 sleep 1
 
@@ -28,19 +28,41 @@ if [[ $CFG == "Y" || $CFG == "y" ]]; then
 
     chmod +x ~/.config/hypr/wallpapers
 
-
-    cp dotfiles/.starship.toml ~/.config/
-	rm ~/.bashrc
-	echo -e '\ncatnap' >> ~/.bashrc    
-	echo -e '\neval"$(starship init bash)"' >> ~/.bashrc
+    cp dotfiles/.zshrc ~/
 	chsh -s /usr/bin/zsh
+fi
+
+sleep 1
+echo -e "Config's installed :3\n"
+
+read -n1 -rep 'Auto open discord? (y,n)' CFG
+if [[ $CFG == "Y" || $CFG == "y" ]]; then
+    echo -e "Copying config files...\n"
+
+	echo -e "discord" >> ~/.config/hypr/run
+
+    chmod +x ~/.config/hypr/wallpapers
+
+    cp dotfiles/.zshrc ~/
+	chsh -s /usr/bin/zsh
+
+	echo -e "Auto discord was set to true."
+
+else
+	echo -e "Auto discord was set to false."
 fi
 
 sleep 1
 
 echo -e "Succes <3\n"
 sleep 1
-echo -e "Removing System \n\n"
-sleep 2
+echo -e "Removing Sudo... \n\n"
+sleep 0.5
+echo -e "3\n"
+sleep 1
+echo -e "2\n"
+sleep 1
+echo -e "1\n"
+sleep 1
 sudo reboot now
 
