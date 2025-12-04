@@ -12,20 +12,22 @@ if [[ $INS == "Y" || $HYP == "y" ]]; then
 
     yay -S --noconfirm hyprland kitty waybar-hyprland \
         swaybg wofi catnap ttf-jetbrains-mono-nerd \
-        grim discord fish starship flatpak
-
-    flatpak install flathub io.gitlab.librewolf-community
+        grim discord fish starship flatpak dunst
 
     echo -e "Installed UwU"
+    else
+
+    echo -e "What?"
+    exit
 fi
 
 sleep 0.5
 echo -e "Copying config files...\n"
 sleep 1
-
-    echo -e "Removing old hyprland file\n"
+    
+    echo -e "Copying dunst config file"\n
+    cp -R dotfiles/dunst ~/.config
     sleep 0.25
-    mkdir ~/.config
 
     echo -e "Copying hyprland file\n"
     sleep 0.25
