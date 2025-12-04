@@ -4,7 +4,7 @@
 	"modules-center": ["hyprland/workspaces"],
 	"modules-left": ["network"],
 	"modules-right": ["pulseaudio", "cpu", "clock"],
-	"height": 30,
+	"height": 25,
 
 	"margin-top": 4,
   	"margin-left": 4,
