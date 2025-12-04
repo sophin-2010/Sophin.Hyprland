@@ -21,7 +21,3 @@ cd <clone folder>
 chmod +x installer
 ./installer
 ```
-<<<<<<< HEAD
-
-=======
->>>>>>> f2f5d763d59dcf45560a13d485a92c15369f5984
